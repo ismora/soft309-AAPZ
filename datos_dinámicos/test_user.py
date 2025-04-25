@@ -12,7 +12,7 @@ def test_user_creation():
     print("Datos:", username, email, age)
     
     assert len(user_data["username"]) > 3
-    assert "@" in user_data["email"]
+    assert "+" in user_data["email"]
 
     """
     Ejecución: pytest .\test_user.py -v -s
